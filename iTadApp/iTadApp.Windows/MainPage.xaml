@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="iTadApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iTadApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	<Page.Resources>
+		<DataTemplate x:Key="AgendaItem">
+			<Grid>
+				<StackPanel>
+					<TextBlock x:Name="Tytul" TextWrapping="Wrap" Text="{Binding Title}"/>
+					<TextBlock x:Name="Prelegent" TextWrapping="Wrap" Text="{Binding Prelegent}"/>
+				</StackPanel>
+			</Grid>
+		</DataTemplate>
+		<DataTemplate x:Key="PrelegenciItem">
+			<Grid>
+				<StackPanel>
+					<TextBlock TextWrapping="Wrap" Text="{Binding PelneImie}"/>
+					<TextBlock TextWrapping="Wrap" Text="{Binding opis}"/>
+				</StackPanel>
+			</Grid>
+		</DataTemplate>
+	</Page.Resources>
+	<Page.BottomAppBar>
+		<AppBar>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<StackPanel Orientation="Horizontal">
+					<AppBarButton x:Name="MapLauncher" HorizontalAlignment="Stretch" Icon="Map" Label="Mapa" VerticalAlignment="Stretch" Click="MapLauncher_Click"/>
+				</StackPanel>
+				<StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal"/>
+			</Grid>
+		</AppBar>
+	</Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<FlipView HorizontalAlignment="Left" VerticalAlignment="Top" Width="1365">
+    		<Grid Background="#FF88A01A">
+    			<ListView x:Name="Agenda" Margin="150,0" ItemTemplate="{StaticResource AgendaItem}"/>
+    		</Grid>
+    		<Grid Background="#FFD43131">
+    			<ListView x:Name="Prelegenci" Margin="150,0" ItemTemplate="{StaticResource PrelegenciItem}"/>
+    		</Grid>
+    	</FlipView>
+    </Grid>
+</Page>
