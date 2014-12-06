@@ -38,7 +38,8 @@ namespace iTadApp
 
         private void Image_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            string url = (sender as Image).Tag.ToString();
+            Launcher.LaunchUriAsync(new Uri(url)); // TODO: Add event handler implementation here.
         }
     }
 }
