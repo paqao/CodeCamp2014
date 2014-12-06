@@ -51,15 +51,15 @@
     			<ListView x:Name="Prelegenci" Margin="150,0" ItemTemplate="{StaticResource PrelegenciItem}"/>
     		</Grid>
     		<Grid Background="#FF874CF0">
-    			<ListView x:Name="Credits" Margin="150,0">
+    			<ListView x:Name="Credits" Margin="400,0">
     				<ListViewItem Margin="0">
-    					<Image Source="Assets/agh_netlogo_copy_2_1.png" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped"/>
+    					<Image Source="Assets/agh_netlogo_copy_2_1.png" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped" Tag="http://knbit.edu.pl/en/"/>
     				</ListViewItem>
     				<ListViewItem Margin="0">
-    					<Image Source="Assets/Imagine Cup.png" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped"/>
+    					<Image Source="Assets/Imagine Cup.png" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped" Tag="http://www.imaginecup.com/"/>
     				</ListViewItem>
     				<ListViewItem Margin="0">
-    					<Image Source="Assets/logo[1].png" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped" Tag="http://knbit.edu.pl/en/"/>
+    					<Image Source="Assets/logo[1].png" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped" Tag="http://ki.agh.edu.pl/"/>
     				</ListViewItem>
     			</ListView>
     		</Grid>
