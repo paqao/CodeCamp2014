@@ -26,6 +26,12 @@
 		<DataTemplate x:Key="CreditsItem">
 			<Grid/>
 		</DataTemplate>
+		<Flyout x:Key="RegisterFlyout">
+			<Grid Height="101" Width="300">
+				<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Aby się zarejestrować przejdź na portal GeekClub" VerticalAlignment="Top" FontSize="21.333"/>
+				<Button Content="GeekClub" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+			</Grid>
+		</Flyout>
 	</Page.Resources>
 	<Page.BottomAppBar>
 		<AppBar>
@@ -36,6 +42,7 @@
 				</Grid.ColumnDefinitions>
 				<StackPanel Orientation="Horizontal">
 					<AppBarButton x:Name="MapLauncher" HorizontalAlignment="Stretch" Icon="Map" Label="Mapa" VerticalAlignment="Stretch" Click="MapLauncher_Click"/>
+					<AppBarButton x:Name="Register" HorizontalAlignment="Stretch" Icon="Highlight" Label="Zarejestruj się" VerticalAlignment="Stretch" Click="MapLauncher_Click" Flyout="{StaticResource RegisterFlyout}" FontFamily="Global User Interface"/>
 				</StackPanel>
 				<StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal"/>
 			</Grid>

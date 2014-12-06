@@ -42,12 +42,10 @@ namespace iTadApp
             try
             {
                  url = (sender as Image).Tag.ToString();
-
             }
             catch (Exception)
             {
                  url = "http://knbit.edu.pl";
-
             }
             Launcher.LaunchUriAsync(new Uri(url)); // TODO: Add event handler implementation here.
         }
