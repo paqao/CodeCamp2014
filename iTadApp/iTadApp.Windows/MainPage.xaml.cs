@@ -34,7 +34,6 @@ namespace iTadApp
         private void MapLauncher_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             Launcher.LaunchUriAsync(new Uri("bingmaps:?cp=50.068308~19.911654&lvl"));
-                // TODO: Add event handler implementation here.
         }
     }
 }
