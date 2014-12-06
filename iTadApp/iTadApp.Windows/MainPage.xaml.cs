@@ -47,7 +47,12 @@ namespace iTadApp
             {
                  url = "http://knbit.edu.pl";
             }
-            Launcher.LaunchUriAsync(new Uri(url)); // TODO: Add event handler implementation here.
+            Launcher.LaunchUriAsync(new Uri(url)); 
+        }
+
+        private void GeekClubLauncher_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            Launcher.LaunchUriAsync(new Uri("http://codeguru.geekclub.pl")); 
         }
     }
 }
