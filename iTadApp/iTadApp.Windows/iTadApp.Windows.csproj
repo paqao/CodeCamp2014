@@ -118,7 +118,10 @@
     <None Include="iTadApp.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\agh_netlogo_copy_2_1.png" />
+    <Content Include="Assets\Imagine Cup.png" />
     <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\logo[1].png" />
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />

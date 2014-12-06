@@ -28,6 +28,8 @@ namespace iTadApp
           new PrelegentItem("Paweł", "Łabno","cos tam"),
           new PrelegentItem("Paweł", "Łabno","cos tam"),
           new PrelegentItem("Paweł", "Łabno","cos tam"),
-      }; 
+      };
+
+
     }
 }

@@ -23,6 +23,9 @@
 				</StackPanel>
 			</Grid>
 		</DataTemplate>
+		<DataTemplate x:Key="CreditsItem">
+			<Grid/>
+		</DataTemplate>
 	</Page.Resources>
 	<Page.BottomAppBar>
 		<AppBar>
@@ -40,12 +43,25 @@
 	</Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    	<FlipView HorizontalAlignment="Left" VerticalAlignment="Top" Width="1365">
+    	<FlipView HorizontalAlignment="Left" VerticalAlignment="Top" SelectedIndex="2">
     		<Grid Background="#FF88A01A">
     			<ListView x:Name="Agenda" Margin="150,0" ItemTemplate="{StaticResource AgendaItem}"/>
     		</Grid>
     		<Grid Background="#FFD43131">
     			<ListView x:Name="Prelegenci" Margin="150,0" ItemTemplate="{StaticResource PrelegenciItem}"/>
+    		</Grid>
+    		<Grid Background="#FF874CF0">
+    			<ListView x:Name="Credits" Margin="150,0">
+    				<ListViewItem Margin="0">
+    					<Image Source="Assets/agh_netlogo_copy_2_1.png" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped"/>
+    				</ListViewItem>
+    				<ListViewItem Margin="0">
+    					<Image Source="Assets/Imagine Cup.png" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped"/>
+    				</ListViewItem>
+    				<ListViewItem Margin="0">
+    					<Image Source="Assets/logo[1].png" Height="120" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Image_Tapped" Tag="http://knbit.edu.pl/en/"/>
+    				</ListViewItem>
+    			</ListView>
     		</Grid>
     	</FlipView>
     </Grid>
